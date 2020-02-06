@@ -1,0 +1,24 @@
+﻿  Source.cpp
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(15,2): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(17,7): error C2065: 'eax': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(17,10): error C3192: syntax error: '^' is not a prefix operator (did you mean '*'?)
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(17,12): error C2065: 'eax': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(18,3): error C2146: syntax error: missing ';' before identifier 'inc'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(18,3): error C2065: 'inc': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(18,7): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(18,7): error C2065: 'eax': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(19,3): error C2146: syntax error: missing ';' before identifier 'cpuid'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(19,3): error C2065: 'cpuid': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(20,3): error C2146: syntax error: missing ';' before identifier 'bt'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(20,3): error C2065: 'bt': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(20,6): error C2146: syntax error: missing ';' before identifier 'ecx'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(20,6): error C2065: 'ecx': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(21,3): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(21,3): error C2065: 'mov': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(21,7): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(21,7): error C2065: 'eax': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(21,12): error C2065: 'ecx': undeclared identifier
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(22,2): error C2143: syntax error: missing ';' before '}'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(24,8): error C2561: 'CheckVM': function must return a value
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(11): message : see declaration of 'CheckVM'
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(126,10): warning C4477: 'printf' : format string '%#10.8x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LARGE_INTEGER'

@@ -12,13 +12,17 @@ bool CheckVM()
 {
 	// Quick and dirty VM check using cpuid
 	// EAX will have our return value
+	// Have to test this in a VM still 
 	__asm
 	{
-		xor eax, eax
-		inc eax
+		xor		eax, eax
+		inc		eax
 		cpuid
-		bt ecx, 0x1f
-		mov eax, ecx
+		bt		ecx, 0x1f
+		jnc		EXIT
+		NotVM:
+		xor eax, eax
+		EXIT:
 	}
 
 	return;

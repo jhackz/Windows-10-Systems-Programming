@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(28,8): warning C4035: 'CheckVM': no return value
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(23,1): warning C4102: 'NotVM': unreferenced label
+C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Chapter1Exercise\Source.cpp(130,10): warning C4477: 'printf' : format string '%#10.8x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LARGE_INTEGER'
+  Chapter1Exercise.vcxproj -> C:\Users\Jason\Documents\Visual Studio 2019\Projects\Windows-10-Systems-Programming\Chapter1Exercise\Debug\Chapter1Exercise.exe
