@@ -1,5 +1,33 @@
 #include "Header.h"
 
+// Taken from chapter 3
+bool EnableDebugPrivilege() 
+{
+	HANDLE hToken;
+
+	if (!::OpenProcessToken(::GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES, &hToken))
+	{
+		return false;
+	}
+
+	TOKEN_PRIVILEGES tp;
+	tp.PrivilegeCount = 1;
+	tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
+
+	if (!::LookupPrivilegeValue(nullptr, SE_DEBUG_NAME, &tp.Privileges[0].Luid))
+	{
+		return false;
+	}
+
+	if (!::AdjustTokenPrivileges(hToken, FALSE, &tp, sizeof(tp), nullptr, nullptr))
+	{
+		return false;
+	}
+
+	return ::GetLastError() == ERROR_SUCCESS;
+}
+
+
 BOOL TermProc(DWORD pid)
 {
 	BOOL status = FALSE;
@@ -43,6 +71,11 @@ int main()
 	PSYSTEM_PROCESS_INFO spi;
 	PVOID procBuffer;
 	ULONG returnLength;
+
+	if (!EnableDebugPrivilege())
+	{
+		printf("[-] Failed to endable debug privileges\n");
+	}
 
 
 	// Get our return length with our first call to NtQuerySystemInfromation
